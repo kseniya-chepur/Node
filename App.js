@@ -1,6 +1,18 @@
 const fs = require('fs');
 const path = require('path');
 
+fs.mkdir(path.join(process.cwd(), 'temp1'), err => {
+    if (err) {
+        console.log(err);
+    }
+})
+
+fs.mkdir(path.join(process.cwd(), 'temp2'), err => {
+    if (err) {
+        console.log(err);
+    }
+})
+
 const filePath1800 = path.join(process.cwd(), '1800')
 console.log(filePath1800)
 const filePath2000 = path.join(process.cwd(), '2000')
